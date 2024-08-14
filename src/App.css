@@ -6,6 +6,8 @@ div.nav-bar {
   gap: 4vw;
   width: 100vw;
   border: 2px black solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ee41a6;
 }
 
 #body-section-style {
