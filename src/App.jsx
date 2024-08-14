@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <div id="body-section-style">
+        <Outlet />
+      </div>
     </>
   );
 }
