@@ -12,7 +12,7 @@ export default function Home() {
         </Link>
       </div>
       <div>
-        <div>Your one stop shop to buying and selling furniture</div>
+        <div>Your one stop shop to buying and selling</div>
       </div>
     </div>
   );

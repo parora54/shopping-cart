@@ -45,7 +45,7 @@ export default function Shop() {
         // Add new product with initial quantity of 1
         updatedCart[product.title] = {
           quantity: 1,
-          price: product.price.toFixed(2),
+          price: parseFloat(product.price.toFixed(2)),
         };
       }
 
