@@ -1,3 +1,12 @@
+import { useOutletContext } from "react-router-dom";
+
 export default function Checkout() {
-  return <div>This would display what your total is</div>;
+  const [cart, setCart] = useOutletContext();
+
+  return (
+    <>
+      <div>Your cart is:</div>
+      <div>{JSON.stringify(cart, null, 2)}</div>
+    </>
+  );
 }
