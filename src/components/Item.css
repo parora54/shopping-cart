@@ -1,0 +1,57 @@
+/* Add a variable for the navbar height to easily adjust for different sizes */
+:root {
+    --navbar-height: 100px; /* Change this to match the height of your actual navbar */
+  }
+  
+  .bootn {
+    margin-top: calc(20px + var(--navbar-height));
+  }
+
+  .item-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 100vw;
+    max-height: 100vh;
+    box-sizing: border-box;
+    padding-top: calc(20px + var(--navbar-height)); /* Adds padding to push content below the navbar */
+    margin-top: 0; /* Ensure no extra margin is applied on top */
+  }
+  
+  .item-image-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .item-info {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .item-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .item-price {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .item-description {
+    font-size: 1.125rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  

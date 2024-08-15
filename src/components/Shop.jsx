@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 // import sampleData from "./sampleData";
 import { useEffect, useState, useCallback } from "react";
+import { Link } from "react-router-dom";
 import { useOutletContext } from "react-router-dom";
 
 //sample data
@@ -9,10 +10,12 @@ import { useOutletContext } from "react-router-dom";
 const Product = ({ product, addToCart }) => {
   return (
     <div className="item">
-      <img src={product.image} alt={product.title} className="item-image" />
+      <Link to={`${product.id}`}>
+        <img src={product.image} alt={product.title} className="item-image" />
+      </Link>
       <div className="item-details">
         <h2 className="item-title">{product.title}</h2>
-        <p className="item-price">${product.price.toFixed(2)}</p>
+        <p className="item-price">${parseFloat(product.price).toFixed(2)}</p>
         <button onClick={() => addToCart(product)} className="item-button">
           Add to Cart
         </button>

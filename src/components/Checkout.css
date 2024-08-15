@@ -1,0 +1,60 @@
+.checkout-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .checkout-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .checkout-items {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .item-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .item-quantity,
+  .item-price {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .checkout-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .checkout-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #0056b3;
+  }
+  
